@@ -1,272 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="MJ'Z Barbershop in Fall River, MA. Classic cuts, modern style, and easy booking."
-  />
-  <title>MJ'Z Barbershop | Fall River, MA</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJ'Z Barbershop</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a href="#top" class="brand">
-        <img src="logo.jpg" alt="MJ'Z Barbershop logo" class="brand-logo" />
-        <div>
-          <span class="brand-name">MJ'Z Barbershop</span>
-          <span class="brand-tag">Fall River, Massachusetts</span>
-        </div>
-      </a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<!-- NAVBAR -->
+<header class="navbar">
+  <img src="logo.jpg" class="logo">
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking" class="btn">Book Now</a>
+  </nav>
+</header>
 
-      <nav class="site-nav">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#owners">Owners</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-        <a href="#book" class="btn btn-small">Book Now</a>
-      </nav>
+<!-- HERO -->
+<section class="hero">
+  <h1>Precision Cuts. Real Style.</h1>
+  <p>Father & Son Barbershop in Fall River, MA</p>
+  <a href="#booking" class="cta">Book Appointment</a>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Haircut</h3>
+      <p>$25</p>
     </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Classic Cuts. Sharp Style. Local Service.</p>
-          <h1>Welcome to MJ'Z Barbershop</h1>
-          <p class="hero-text">
-            Serving the Fall River community with a clean atmosphere, quality barbering,
-            and a modern booking experience.
-          </p>
-          <div class="hero-actions">
-            <a href="#book" class="btn">Book an Appointment</a>
-            <a href="#contact" class="btn btn-outline">Visit the Shop</a>
-          </div>
-          <ul class="hero-highlights">
-            <li>Located at 4263 North Main St.</li>
-            <li>Family-owned by Mark Thiesen and Jahyzen Thiesen</li>
-            <li>Instagram, reviews, and booking links ready to connect</li>
-          </ul>
-        </div>
-
-        <div class="hero-card">
-          <img src="logo.jpg" alt="MJ'Z Barbershop logo artwork" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container two-col">
-        <div>
-          <p class="section-label">About The Shop</p>
-          <h2>A barbershop built on family, style, and community</h2>
-          <p>
-            MJ'Z Barbershop is a public-facing barbershop website prototype built to showcase
-            the shop's identity, make it easy for customers to connect on social media,
-            check reviews, and book appointments.
-          </p>
-          <p>
-            The design uses the shop logo, bold typography, and a clean dark-and-gold color
-            palette to match the barbershop brand.
-          </p>
-        </div>
-        <div class="info-card">
-          <h3>Shop Details</h3>
-          <div class="detail-row">
-            <span>Name</span>
-            <strong>MJ'Z Barbershop</strong>
-          </div>
-          <div class="detail-row">
-            <span>Address</span>
-            <strong>4263 North Main St.<br />Fall River, MA 02721</strong>
-          </div>
-          <div class="detail-row">
-            <span>Owners</span>
-            <strong>Mark Thiesen<br />Jahyzen Thiesen</strong>
-          </div>
-          <div class="detail-row">
-            <span>Website Type</span>
-            <strong>Public business website prototype</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="services">
-      <div class="container">
-        <p class="section-label center">Services</p>
-        <h2 class="center">Popular Barbershop Services</h2>
-        <div class="card-grid">
-          <article class="service-card">
-            <h3>Classic Haircut</h3>
-            <p>Clean, professional cuts for everyday style.</p>
-          </article>
-          <article class="service-card">
-            <h3>Fade / Taper</h3>
-            <p>Sharp transitions with attention to detail.</p>
-          </article>
-          <article class="service-card">
-            <h3>Beard Trim</h3>
-            <p>Shape, line-up, and trim for a finished look.</p>
-          </article>
-          <article class="service-card">
-            <h3>Kids Cuts</h3>
-            <p>Friendly service for younger clients.</p>
-          </article>
-          <article class="service-card">
-            <h3>Line-Up</h3>
-            <p>Quick edge-up service to stay fresh between cuts.</p>
-          </article>
-          <article class="service-card">
-            <h3>Hot Towel Finish</h3>
-            <p>Add a premium touch to the barbershop experience.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="owners">
-      <div class="container">
-        <p class="section-label center">Owners</p>
-        <h2 class="center">Meet the team behind MJ'Z Barbershop</h2>
-        <div class="owner-grid">
-          <article class="owner-card">
-            <div class="owner-badge">M</div>
-            <h3>Mark Thiesen</h3>
-            <p>Co-owner dedicated to quality service, professionalism, and building a welcoming shop.</p>
-          </article>
-          <article class="owner-card">
-            <div class="owner-badge">J</div>
-            <h3>Jahyzen Thiesen</h3>
-            <p>Co-owner helping shape the next generation of style and community at MJ'Z Barbershop.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="reviews">
-      <div class="container two-col">
-        <div>
-          <p class="section-label">Customer Reviews</p>
-          <h2>Help new customers see why your shop stands out</h2>
-          <p>
-            This section can be connected to your Google Business profile or linked directly to
-            your Google reviews page.
-          </p>
-          <a
-            href="https://www.google.com/search?q=MJ%27Z+Barbershop+Fall+River+MA"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Google Reviews
-          </a>
-        </div>
-        <div class="review-list">
-          <article class="review-card">
-            <p>“Great cuts, clean shop, and a professional atmosphere.”</p>
-            <span>Sample review layout</span>
-          </article>
-          <article class="review-card">
-            <p>“Easy booking and a great experience from start to finish.”</p>
-            <span>Sample review layout</span>
-          </article>
-          <article class="review-card">
-            <p>“Friendly service and attention to detail every time.”</p>
-            <span>Sample review layout</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="book">
-      <div class="container booking-banner">
-        <div>
-          <p class="section-label">Booking</p>
-          <h2>Connect your booking application here</h2>
-          <p>
-            Replace the placeholder button below with your real booking app link from Booksy,
-            Square Appointments, Fresha, or any other platform you use.
-          </p>
-        </div>
-        <a
-          href="https://example.com/booking-link"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Open Booking App
-        </a>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="section-label">Contact & Location</p>
-          <h2>Visit MJ'Z Barbershop</h2>
-          <p>
-            Stop by the shop, follow on Instagram, and make it easy for customers to find you online.
-          </p>
-          <div class="contact-list">
-            <div>
-              <span>Address</span>
-              <strong>4263 North Main St.<br />Fall River, MA 02721</strong>
-            </div>
-            <div>
-              <span>Instagram</span>
-              <strong><a href="https://instagram.com/your-barbershop-instagram" target="_blank" rel="noopener noreferrer">@your-barbershop-instagram</a></strong>
-            </div>
-            <div>
-              <span>Owners</span>
-              <strong>Mark Thiesen &amp; Jahyzen Thiesen</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="map-card">
-          <iframe
-            title="MJ'Z Barbershop Location"
-            src="https://www.google.com/maps?q=4263+North+Main+St,+Fall+River,+MA+02721&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <div>
-        <strong>MJ'Z Barbershop</strong>
-        <p>4263 North Main St., Fall River, MA 02721</p>
-      </div>
-      <div class="footer-links">
-        <a href="#top">Back to top</a>
-        <a href="https://instagram.com/your-barbershop-instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.google.com/search?q=MJ%27Z+Barbershop+Fall+River+MA" target="_blank" rel="noopener noreferrer">Google Reviews</a>
-      </div>
+    <div class="card">
+      <h3>Beard Trim</h3>
+      <p>$15</p>
     </div>
-  </footer>
+    <div class="card">
+      <h3>Haircut + Beard</h3>
+      <p>$35</p>
+    </div>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- ABOUT -->
+<section id="about" class="section dark">
+  <h2>About MJ'Z</h2>
+  <p>
+    MJ'Z Barbershop is a family-owned shop operated by Mark Thiesen and his son Jahyzen Thiesen.
+    Built on tradition, precision, and community, we bring modern style with old-school barbering values.
+  </p>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section highlight">
+  <h2>Book Your Appointment</h2>
+  <p>Skip the wait. Reserve your spot today.</p>
+  <a href="https://YOUR-BOOKING-LINK.com" target="_blank" class="cta">Book Now</a>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section">
+  <h2>Customer Reviews</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=MJZ+Barbershop+Fall+River+MA&output=embed"
+    width="100%" height="300" style="border:0;">
+  </iframe>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+  <h2>Visit Us</h2>
+  <p>4263 North Main St.<br>Fall River, MA 02721</p>
+  <p>Open 7 Days a Week</p>
+</section>
+
+<footer>
+  <p>© 2026 MJ'Z Barbershop</p>
+</footer>
+
 </body>
 </html>
