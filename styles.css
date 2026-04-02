@@ -16,7 +16,7 @@ body {
 
 .logo { height: 60px; }
 
-.navbar a {
+nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
@@ -26,6 +26,27 @@ body {
   background: gold;
   color: black;
   padding: 8px 15px;
+}
+
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: black;
+  }
+  nav.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
 }
 
 /* HERO */
@@ -43,7 +64,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.85);
 }
 
 .hero h1 {
@@ -53,9 +74,7 @@ body {
   z-index: 1;
 }
 
-.hero p {
-  z-index: 1;
-}
+.hero p { z-index: 1; }
 
 .cta {
   z-index: 1;
@@ -66,24 +85,24 @@ body {
   text-decoration: none;
 }
 
-.dark-btn {
-  background: black;
-  color: gold;
-  border: 2px solid black;
-}
-
-/* STRIPE */
-.stripe {
-  height: 10px;
+/* 🔴🔵 ANIMATED BARBER POLE */
+.pole {
+  height: 12px;
   background: repeating-linear-gradient(
     45deg,
-    red,
+    red 0px,
     red 10px,
     white 10px,
     white 20px,
     blue 20px,
     blue 30px
   );
+  animation: movePole 2s linear infinite;
+}
+
+@keyframes movePole {
+  from { background-position: 0 0; }
+  to { background-position: 60px 0; }
 }
 
 /* SECTIONS */
@@ -118,6 +137,35 @@ body {
 .barber-card {
   border: 1px solid gold;
   padding: 20px;
+  transition: 0.3s;
+}
+
+.barber-card:hover {
+  transform: scale(1.05);
+  background: gold;
+  color: black;
+}
+
+/* REVIEWS BUTTON */
+.review-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+}
+
+/* FADE-IN */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* FOOTER */
