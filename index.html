@@ -15,7 +15,10 @@
 <!-- NAV -->
 <header class="navbar">
   <img src="logo.jpg" class="logo">
-  <nav>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
     <a href="#services">Services</a>
     <a href="#barbers">Barbers</a>
     <a href="#reviews">Reviews</a>
@@ -32,11 +35,11 @@
   <a href="#booking" class="cta">Book Appointment</a>
 </section>
 
-<!-- BARBER STRIPE -->
-<div class="stripe"></div>
+<!-- ANIMATED BARBER POLE -->
+<div class="pole"></div>
 
 <!-- SERVICES -->
-<section id="services" class="section">
+<section id="services" class="section fade-in">
   <h2>Our Services</h2>
   <div class="services">
     <div class="card"><h3>Haircut</h3><p>$25</p></div>
@@ -46,7 +49,7 @@
 </section>
 
 <!-- BARBERS -->
-<section id="barbers" class="section dark">
+<section id="barbers" class="section dark fade-in">
   <h2>Meet the Barbers</h2>
   <div class="barbers">
     <div class="barber-card">
@@ -55,21 +58,26 @@
     </div>
     <div class="barber-card">
       <h3>Jahyzen Thiesen</h3>
-      <p>Co-Owner • Next Generation Barber</p>
+      <p>Co-Owner • Next Gen Barber</p>
     </div>
   </div>
 </section>
 
 <!-- BOOKING -->
-<section id="booking" class="section highlight">
+<section id="booking" class="section highlight fade-in">
   <h2>Book Your Appointment</h2>
   <p>Lock in your cut. No waiting.</p>
   <a href="https://YOUR-BOOKING-LINK.com" target="_blank" class="cta dark-btn">Book Now</a>
 </section>
 
 <!-- REVIEWS -->
-<section id="reviews" class="section">
+<section id="reviews" class="section fade-in">
   <h2>Customer Reviews</h2>
+
+  <a href="https://share.google/6Ji8YekQy3KoN3gGO" target="_blank" class="review-btn">
+    View All Reviews on Google
+  </a>
+
   <iframe 
     src="https://www.google.com/maps?q=MJZ+Barbershop+Fall+River+MA&output=embed"
     width="100%" height="300" style="border:0;">
@@ -77,7 +85,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section dark">
+<section id="contact" class="section dark fade-in">
   <h2>Visit Us</h2>
   <p>4263 North Main St.<br>Fall River, MA</p>
   <p>Open 7 Days a Week</p>
