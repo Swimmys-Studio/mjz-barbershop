@@ -1,23 +1,20 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0a0a0a;
+  font-family: 'Oswald', sans-serif;
+  background: #0b0b0b;
   color: white;
 }
 
-/* NAVBAR */
+/* NAV */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 15px 30px;
   background: black;
   border-bottom: 2px solid gold;
 }
 
-.logo {
-  height: 60px;
-}
+.logo { height: 60px; }
 
 .navbar a {
   color: white;
@@ -29,31 +26,64 @@ body {
   background: gold;
   color: black;
   padding: 8px 15px;
-  border-radius: 5px;
 }
 
 /* HERO */
 .hero {
-  height: 90vh;
-  background: linear-gradient(black, #111);
+  height: 100vh;
+  background: url('logo.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 4px solid gold;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-family: 'Playfair Display';
+  font-size: 3.5rem;
   color: gold;
+  z-index: 1;
+}
+
+.hero p {
+  z-index: 1;
 }
 
 .cta {
+  z-index: 1;
   background: gold;
   color: black;
   padding: 12px 25px;
-  text-decoration: none;
   margin-top: 15px;
+  text-decoration: none;
+}
+
+.dark-btn {
+  background: black;
+  color: gold;
+  border: 2px solid black;
+}
+
+/* STRIPE */
+.stripe {
+  height: 10px;
+  background: repeating-linear-gradient(
+    45deg,
+    red,
+    red 10px,
+    white 10px,
+    white 20px,
+    blue 20px,
+    blue 30px
+  );
 }
 
 /* SECTIONS */
@@ -62,14 +92,8 @@ body {
   text-align: center;
 }
 
-.dark {
-  background: #111;
-}
-
-.highlight {
-  background: gold;
-  color: black;
-}
+.dark { background: #111; }
+.highlight { background: gold; color: black; }
 
 /* SERVICES */
 .services {
@@ -82,11 +106,22 @@ body {
   background: #1a1a1a;
   padding: 20px;
   border: 1px solid gold;
-  width: 200px;
 }
 
-footer {
-  text-align: center;
+/* BARBERS */
+.barbers {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.barber-card {
+  border: 1px solid gold;
   padding: 20px;
+}
+
+/* FOOTER */
+footer {
   background: black;
+  padding: 20px;
 }
