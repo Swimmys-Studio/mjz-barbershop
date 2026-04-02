@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MJ'Z Barbershop</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MJ'Z Barbershop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <header class="navbar">
   <img src="logo.jpg" class="logo">
   <nav>
     <a href="#services">Services</a>
-    <a href="#about">About</a>
+    <a href="#barbers">Barbers</a>
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
     <a href="#booking" class="btn">Book Now</a>
@@ -23,44 +26,45 @@
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Precision Cuts. Real Style.</h1>
-  <p>Father & Son Barbershop in Fall River, MA</p>
+  <div class="overlay"></div>
+  <h1>MJ'Z BARBERSHOP</h1>
+  <p>Precision Cuts • Modern Style • Family Owned</p>
   <a href="#booking" class="cta">Book Appointment</a>
 </section>
 
+<!-- BARBER STRIPE -->
+<div class="stripe"></div>
+
 <!-- SERVICES -->
 <section id="services" class="section">
-  <h2>Services</h2>
+  <h2>Our Services</h2>
   <div class="services">
-    <div class="card">
-      <h3>Haircut</h3>
-      <p>$25</p>
-    </div>
-    <div class="card">
-      <h3>Beard Trim</h3>
-      <p>$15</p>
-    </div>
-    <div class="card">
-      <h3>Haircut + Beard</h3>
-      <p>$35</p>
-    </div>
+    <div class="card"><h3>Haircut</h3><p>$25</p></div>
+    <div class="card"><h3>Beard Trim</h3><p>$15</p></div>
+    <div class="card"><h3>Haircut + Beard</h3><p>$35</p></div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section dark">
-  <h2>About MJ'Z</h2>
-  <p>
-    MJ'Z Barbershop is a family-owned shop operated by Mark Thiesen and his son Jahyzen Thiesen.
-    Built on tradition, precision, and community, we bring modern style with old-school barbering values.
-  </p>
+<!-- BARBERS -->
+<section id="barbers" class="section dark">
+  <h2>Meet the Barbers</h2>
+  <div class="barbers">
+    <div class="barber-card">
+      <h3>Mark Thiesen</h3>
+      <p>Owner • Master Barber</p>
+    </div>
+    <div class="barber-card">
+      <h3>Jahyzen Thiesen</h3>
+      <p>Co-Owner • Next Generation Barber</p>
+    </div>
+  </div>
 </section>
 
 <!-- BOOKING -->
 <section id="booking" class="section highlight">
   <h2>Book Your Appointment</h2>
-  <p>Skip the wait. Reserve your spot today.</p>
-  <a href="https://YOUR-BOOKING-LINK.com" target="_blank" class="cta">Book Now</a>
+  <p>Lock in your cut. No waiting.</p>
+  <a href="https://YOUR-BOOKING-LINK.com" target="_blank" class="cta dark-btn">Book Now</a>
 </section>
 
 <!-- REVIEWS -->
@@ -75,7 +79,7 @@
 <!-- CONTACT -->
 <section id="contact" class="section dark">
   <h2>Visit Us</h2>
-  <p>4263 North Main St.<br>Fall River, MA 02721</p>
+  <p>4263 North Main St.<br>Fall River, MA</p>
   <p>Open 7 Days a Week</p>
 </section>
 
@@ -83,5 +87,6 @@
   <p>© 2026 MJ'Z Barbershop</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
